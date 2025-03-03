@@ -3,7 +3,7 @@ function handler(element) {
     const appValue = pElement.getAttribute('app');
     const openValue = pElement.getAttribute('open');
 
-    const validOpenValues = ['ruffed', 'screened', 'emupage', 'newtab'];
+    const validOpenValues = ['ruffed', 'screened', 'emupage1', 'newtab'];
 
     if (!validOpenValues.includes(openValue)) {
         console.error('Error: Invalid "open" value:', openValue);
@@ -17,11 +17,8 @@ function handler(element) {
             if (openValue == "screened"){
                 
             }
-            if (openValue == "emupage"){
-                const emu = pElement.getAttribute('emu');
-                if (emu == '1'){ // NES
-                    emupage1();
-                }
+            if (openValeue == "emupage1"){
+                emupage1()
             }
             if (openValue == "newtab"){
                 newtab()
@@ -105,7 +102,7 @@ function handler(element) {
     }
 
     function emupage1(){
-        const url = `emupage-1.html?load=${appValue}`;
+        const url = `emupage1?load=${appValue}`;
         
         // Open a blank window
         const win = window.open('about:blank', '_blank');
