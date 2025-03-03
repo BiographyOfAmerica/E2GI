@@ -71,7 +71,7 @@ function handler(element) {
                     setUrl = "res/menu/MCC/index.html"
                 }
                 if (appValue == 'lite'){
-                    setUrl = atob('aHR0cHM6Ly9iaW9ncmFwaHlvZmFtZXJpY2EuZ2l0aHViLmlvL3Byb2plY3RzLmh0bWw=')
+                    setUrl = atob('aHR0cHM6Ly9iaW9ncmFwaHlvZmFtZXJpY2EuZ2l0aHViLmlvL2xpdGUvcHJvamVjdHMuaHRtbA==')
                 }
         }
         const url = `${setUrl}`;
