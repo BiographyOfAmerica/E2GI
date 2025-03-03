@@ -92,3 +92,8 @@ body {
     box-sizing: border-box;
     border: 5px solid green;
 }
+
+.menu {
+    box-sizing: border-box;
+    border: 5px solid orange;
+}
