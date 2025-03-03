@@ -17,7 +17,7 @@ function handler(element) {
             if (openValue == "screened"){
                 
             }
-            if (openValeue == "emupage1"){
+            if (openValue == "emupage1"){
                 emupage1()
             }
             if (openValue == "newtab"){
