@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Drive</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+    <body>
+        <div id="container" style="width: 750px; height: 500px;"></div>
+
+        <script>
+            window.RufflePlayer = window.RufflePlayer || {};
+            window.addEventListener("load", () => {
+                const urlParams = new URLSearchParams(window.location.search);
+                const loadQuery = urlParams.get('load');
+
+                if (!loadQuery) {
+                    console.error('Error: No load query provided.');
+                    alert('Error: No load query provided.');
+                    return;
+                }
+
+                const ruffle = window.RufflePlayer.newest();
+                const player = ruffle.createPlayer();
+                const container = document.getElementById("container");
+                
+                container.appendChild(player);
+                player.load(`res/swf/${loadQuery}.swf`);
+            });
+        </script>
+
+        <script src="res/ruffed/ruffle.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
