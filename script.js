@@ -18,7 +18,10 @@ function handler(element) {
                 
             }
             if (openValue == "emupage"){
-                
+                const emu = pElement.getAttribute('emu');
+                if (emu == '1'){ // NES
+                    emupage1();
+                }
             }
             if (openValue == "newtab"){
                 newtab()
@@ -77,6 +80,32 @@ function handler(element) {
                 }
         }
         const url = `${setUrl}`;
+        
+        // Open a blank window
+        const win = window.open('about:blank', '_blank');
+
+        if (win) {
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+
+            // Create an iframe and set the source
+            const iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+
+            // Append the iframe to the new window's body
+            win.document.body.appendChild(iframe);
+        } else {
+            console.error('Popup blocked or failed to open.');
+            alert('Error: Unable to open new window.');
+        }
+    }
+
+    function emupage1(){
+        const url = `emupage-1.html?load=${appValue}`;
         
         // Open a blank window
         const win = window.open('about:blank', '_blank');
