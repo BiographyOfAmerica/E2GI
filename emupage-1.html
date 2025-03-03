@@ -163,9 +163,15 @@
               const loadQuery = urlParams.get('load');
               EJS_player = '#gxme';
               EJS_biosUrl = ''; // Url to Famicom Disk System bios
-              EJS_gameUrl = `res/nes/${loadQuery}`; // Url to Game rom
+              
               EJS_core = 'nes'; // Optional core: mesen, nestopia
               EJS_lightgun = false; // Lightgun
+
+              if (loadQuery){
+                EJS_gameUrl = `res/nes/${loadQuery}`; // Url to Game rom
+              } else {
+                alert("error")
+              }
           </script>
           <script src="res/emupage/loader.js"></script>
           
