@@ -3,7 +3,7 @@ function handler(element) {
     const appValue = pElement.getAttribute('app');
     const openValue = pElement.getAttribute('open');
 
-    const validOpenValues = ['ruffed', 'screened', 'emupage', 'menu'];
+    const validOpenValues = ['ruffed', 'screened', 'emupage', 'newtab'];
 
     if (!validOpenValues.includes(openValue)) {
         console.error('Error: Invalid "open" value:', openValue);
@@ -20,8 +20,8 @@ function handler(element) {
             if (openValue == "emupage"){
                 
             }
-            if (openValue == "menu"){
-                menuer()
+            if (openValue == "newtab"){
+                newtab()
             }
         }
     }
@@ -52,12 +52,24 @@ function handler(element) {
         }
     }
 
-    function menuer(){
+    function newtab(){
         let setUrl;
         if (appValue){
-            if (appValue == 'multigxme'){
-                setUrl = "res/menu/Multigxme/index.html"
-            }
+                if (appValue == 'multigxme'){
+                    setUrl = "res/menu/Multigxme/index.html"
+                }
+                if (appValue == 'm18'){
+                    setUrl = "res/menu/MC18/index.html"
+                }
+                if (appValue == 'm152'){
+                    setUrl = "res/menu/MC152/index.html"
+                }
+                if (appValue == 'mbeta'){
+                    setUrl = "res/menu/MCB/index.html"
+                }
+                if (appValue == 'mclassic'){
+                    setUrl = "res/menu/MCC/index.html"
+                }
         }
         const url = `${setUrl}`;
         
