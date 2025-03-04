@@ -75,6 +75,11 @@ function handler(element) {
                     var y = Math.round(Math.random() * 100);
                     setUrl = `${x}?apple=${y}`
                 }
+				if (appValue == 'bitlife'){
+					const x = atob('aHR0cHM6Ly9iaW9ncmFwaHlvZmFtZXJpY2EuZ2l0aHViLmlvL3NldDEvQml0TGlmZS8=')
+                    var y = Math.round(Math.random() * 100);
+                    setUrl = `${x}?apple=${y}`
+				}
         }
         const url = `${setUrl}`;
         
