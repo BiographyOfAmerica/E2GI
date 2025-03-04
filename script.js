@@ -80,6 +80,36 @@ function handler(element) {
                     var y = Math.round(Math.random() * 100);
                     setUrl = `${x}?apple=${y}`
 				}
+                if (appValue == 'bbasics'){
+					const x = atob('aHR0cHM6Ly9iaW9ncmFwaHlvZmFtZXJpY2EuZ2l0aHViLmlvL3NldDEvYmFsZGlzLWJhc2ljcw==')
+                    var y = Math.round(Math.random() * 100);
+                    setUrl = `${x}?apple=${y}`
+				}
+                if (appValue == 'fnaw'){
+					const x = atob('aHR0cHM6Ly9iaW9ncmFwaHlvZmFtZXJpY2EuZ2l0aHViLmlvL3NldDEvZm5hdw==')
+                    var y = Math.round(Math.random() * 100);
+                    setUrl = `${x}?apple=${y}`
+				}
+                if (appValue == 'hot'){
+					const x = atob('aHR0cHM6Ly9iaW9ncmFwaHlvZmFtZXJpY2EuZ2l0aHViLmlvL3NldDEvc3VwZXJob3Q=')
+                    var y = Math.round(Math.random() * 100);
+                    setUrl = `${x}?apple=${y}`
+				}
+                if (appValue == 'hwheels'){
+					const x = atob('aHR0cHM6Ly9iaW9ncmFwaHlvZmFtZXJpY2EuZ2l0aHViLmlvL3NldDEvaGFwcHl3aGVlbHM=')
+                    var y = Math.round(Math.random() * 100);
+                    setUrl = `${x}?apple=${y}`
+				}
+                if (appValue == 'miniputt'){
+					const x = atob('aHR0cHM6Ly9iaW9ncmFwaHlvZmFtZXJpY2EuZ2l0aHViLmlvL3NldDEvbWluaXB1dHQ=')
+                    var y = Math.round(Math.random() * 100);
+                    setUrl = `${x}?apple=${y}`
+				}
+                if (appValue == 'ssurfers'){
+					const x = atob('aHR0cHM6Ly9iaW9ncmFwaHlvZmFtZXJpY2EuZ2l0aHViLmlvL3NldDEvc3Vid2F5LXN1cmZlcnM=')
+                    var y = Math.round(Math.random() * 100);
+                    setUrl = `${x}?apple=${y}`
+				}
         }
         const url = `${setUrl}`;
         
