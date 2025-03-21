@@ -202,8 +202,8 @@ var ejs_loader = function (_0x43a89d) {
     },
     0x5: function (_0x18438f) {
       _0x18438f.exports = {
-        'script': "//www.emulatorjs.com/emulator.js",
-        'scriptLegacy': "//www.emulatorjs.com/emulator-legacy.js"
+        'script': "ulator.js",
+        'scriptLegacy': "ulator-legacy.js"
       };
     }
   })['default'];
